@@ -320,3 +320,83 @@ body {
 .range input {
   cursor: pointer;
 }
+
+
+@media (max-width : 1390px) {
+  .left {
+    background-color: rgb(1, 1, 1);
+    position: absolute;
+    left: -120%;
+    transition: all 0.6s;
+    width: 400px;
+    z-index: 1;
+  }
+
+  .close {
+    display: block;
+  }
+
+  .left .close {
+    position: absolute;
+    right: 31px;
+    top: 23px;
+    width: 29px;
+  }
+
+  .right {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+  }
+
+  .playbar {
+    /* width: 92vw; */
+    font-size: 15px;
+  }
+
+  .playbar {
+    width: calc(100vw - 70px);
+    /* padding-left: 30px; */
+  }
+
+  .seekbar {
+    /* width: calc(100vw - 120px); */
+    width: 100%;
+  }
+
+  .abovebar {
+    width: mi;
+  }
+
+  .hamburger {
+    display: block;
+    align-self: center;
+
+  }
+
+  .containerCard {
+    justify-content: center;
+  }
+
+
+}
+
+@media (max-width : 500px) {
+  .playbar {
+    width: 88vw;
+  }
+
+  .card {
+    width: 80vw;
+  }
+
+  .abovebar {
+    flex-direction: column;
+    gap: 5px;
+    border-radius: 6px;
+  }
+
+  .timevol {
+    gap: 20px;
+  }
+}
